@@ -25,43 +25,6 @@ Tailwind CSS → Modern, responsive styling
 ✅ Responsive UI – Works seamlessly on all devices
 ✅ Clean Codebase – Modular backend (controller/routes) & custom React hooks
 
-📂 Backend Structure
-
-backend/
-├── controllers/
-│   └── searchController.js   # Handles API requests
-├── models/
-│   └── Search.js             # Mongoose schema
-├── routes/
-│   └── api.js                # API endpoints
-├── .env.example              # Example environment variables
-├── server.js                 # Main entry point
-└── package.json
-
-
-📂 Frontend Structure
-
-frontend/
-├── public/
-│   └── github.svg
-├── src/
-│   ├── components/
-│   │   ├── Pagination.jsx
-│   │   ├── PreviousSearches.jsx
-│   │   ├── RepoList.jsx
-│   │   └── SearchBar.jsx
-│   ├── hooks/
-│   │   └── useRepoSearch.js   # Custom search hook
-│   ├── services/
-│   │   └── api.js             # API requests
-│   ├── App.jsx
-│   ├── index.css              # Tailwind CSS
-│   └── main.jsx
-├── index.html
-├── package.json
-├── tailwind.config.js
-└── vite.config.js
-
 
 1️⃣ Backend Setup
 cd backend
@@ -77,7 +40,6 @@ GITHUB_API_URL=https://api.github.com/search/repositories
 Run server:
 
 npm start
-
 
 👉 API running at http://localhost:5000
 
