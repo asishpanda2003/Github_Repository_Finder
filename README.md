@@ -25,7 +25,8 @@ Tailwind CSS → Modern, responsive styling
 ✅ Responsive UI – Works seamlessly on all devices
 ✅ Clean Codebase – Modular backend (controller/routes) & custom React hooks
 
-Backend
+📂 Backend Structure
+
 backend/
 ├── controllers/
 │   └── searchController.js   # Handles API requests
@@ -37,7 +38,8 @@ backend/
 ├── server.js                 # Main entry point
 └── package.json
 
-Frontend
+
+📂 Frontend Structure
 
 frontend/
 ├── public/
@@ -59,6 +61,7 @@ frontend/
 ├── package.json
 ├── tailwind.config.js
 └── vite.config.js
+
 
 1️⃣ Backend Setup
 cd backend
