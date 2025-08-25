@@ -1,50 +1,47 @@
-MERN GitHub Repo Searcher
-This is a full-stack web application that allows users to search for GitHub repositories, view the results, and see a history of their recent searches.
+🚀 MERN GitHub Repo Searcher
 
-The application is built with the MERN stack:
+A full-stack MERN application that allows users to search GitHub repositories, browse results with pagination, and view a history of recent searches.
 
-MongoDB: A NoSQL database to store search history.
+🔍 Search → 📄 Paginate → 📜 Save History → ❌ Delete History
 
-Express.js: A backend framework for building the API.
+🛠️ Tech Stack
 
-React.js: A frontend library for building the user interface.
+MongoDB → Stores search history
 
-Node.js: The JavaScript runtime environment for the server.
+Express.js → Backend framework for APIs
 
-Features
-Repository Search: Search for GitHub repositories by keyword.
+React.js → Frontend UI built with hooks & components
 
-Pagination: Navigate through search results with "Next" and "Previous" buttons.
+Node.js → Server runtime
 
-Search History: The 10 most recent, unique searches are saved and displayed.
+Tailwind CSS → Modern, responsive styling
 
-Delete History: Users can remove individual items from their search history.
+✨ Features
 
-Responsive UI: The interface is built with Tailwind CSS for a clean, modern look on all devices.
+✅ Repository Search – Search GitHub repositories by keyword
+✅ Pagination – Navigate results with Next & Previous buttons
+✅ Search History – Save last 10 unique searches
+✅ Delete History – Remove unwanted search terms
+✅ Responsive UI – Works seamlessly on all devices
+✅ Clean Codebase – Modular backend (controller/routes) & custom React hooks
 
-Modular Codebase: The backend uses a controller/route structure, and the frontend uses custom hooks for clean, maintainable code.
-
-Project Structure
-The project is divided into two main folders: backend and frontend.
-
-Backend Structure
+Backend
 backend/
 ├── controllers/
-│   └── searchController.js   # Logic for handling API requests
+│   └── searchController.js   # Handles API requests
 ├── models/
-│   └── Search.js             # Mongoose schema for search terms
+│   └── Search.js             # Mongoose schema
 ├── routes/
-│   └── api.js                # API route definitions
+│   └── api.js                # API endpoints
 ├── .env.example              # Example environment variables
-├── package.json
-└── server.js                 # Main server entry point
+├── server.js                 # Main entry point
+└── package.json
 
-Frontend Structure
-Here is a more detailed view of the frontend folder and its important files:
+Frontend
 
 frontend/
 ├── public/
-│   └── github.svg              # Public assets
+│   └── github.svg
 ├── src/
 │   ├── components/
 │   │   ├── Pagination.jsx
@@ -52,66 +49,39 @@ frontend/
 │   │   ├── RepoList.jsx
 │   │   └── SearchBar.jsx
 │   ├── hooks/
-│   │   └── useRepoSearch.js  # Custom hook for search logic
+│   │   └── useRepoSearch.js   # Custom search hook
 │   ├── services/
-│   │   └── api.js            # API request handling
-│   ├── App.jsx               # Main application component
-│   ├── index.css             # Tailwind CSS and global styles
-│   └── main.jsx              # Frontend entry point
-├── index.html                # Main HTML file
+│   │   └── api.js             # API requests
+│   ├── App.jsx
+│   ├── index.css              # Tailwind CSS
+│   └── main.jsx
+├── index.html
 ├── package.json
-├── tailwind.config.js        # Tailwind CSS configuration
-└── vite.config.js            # Vite configuration
+├── tailwind.config.js
+└── vite.config.js
 
-Getting Started
-Prerequisites
-Node.js and npm (or yarn)
-
-A running MongoDB instance (you can use a local instance or a cloud service like MongoDB Atlas)
-
-Git
-
-1. Backend Setup
-First, set up and run the backend server.
-
-Navigate to the backend folder:
-
+1️⃣ Backend Setup
 cd backend
-
-Install dependencies:
-
 npm install
-
-Create an environment file:
-Copy the example .env file.
-
 cp .env.example .env
 
-Open the new .env file and add your MongoDB connection string:
+Edit .env with your config:
 
 PORT=5000
 MONGO_URI=<your_mongodb_connection_string>
 GITHUB_API_URL=https://api.github.com/search/repositories
 
-Start the backend server:
+Run server:
 
 npm start
 
-The server should now be running on http://localhost:5000.
 
-2. Frontend Setup
-Next, set up and run the React frontend.
+👉 API running at http://localhost:5000
 
-Navigate to the frontend folder (from the project root):
-
+2️⃣ Frontend Setup
 cd frontend
-
-Install dependencies:
-
 npm install
-
-Start the frontend development server:
-
 npm run dev
 
-The application will open in your browser, usually at http://localhost:5173. You can now use the app.
+
+👉 App available at http://localhost:5173
