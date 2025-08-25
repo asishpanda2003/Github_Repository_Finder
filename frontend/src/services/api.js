@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = https://github-backend-4iie.onrender.com/api;
+const API_BASE_URL = 'https://github-backend-4iie.onrender.com/api';
 
 export const searchRepositories = (term, pageNum) => {
     return axios.get(`${API_BASE_URL}/search`, {
